@@ -6,24 +6,22 @@ using System.Web.Mvc;
 
 namespace MobilePhoneShop.Controllers
 {
-    public class HomeController : Controller
+    public class GioHangController : Controller
     {
+        // GET: ShoppingCart
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
+        // GET: /ShoppingCart/GioHang
+        public ActionResult GioHang()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult ThanhToan()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
