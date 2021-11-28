@@ -35,3 +35,8 @@
   margin-bottom: 5px;
 }
 
+.field-validation-error {
+    color: red;
+    font-size: 12px
+}
+

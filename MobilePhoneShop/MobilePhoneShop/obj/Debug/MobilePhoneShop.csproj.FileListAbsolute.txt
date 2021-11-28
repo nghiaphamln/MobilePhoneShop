@@ -156,3 +156,7 @@ E:\GitHub\MobilePhoneShop\MobilePhoneShop\MobilePhoneShop\obj\Debug\MobilePhoneS
 E:\GitHub\MobilePhoneShop\MobilePhoneShop\MobilePhoneShop\obj\Debug\MobilePhoneShop.csproj.CopyComplete
 E:\GitHub\MobilePhoneShop\MobilePhoneShop\MobilePhoneShop\obj\Debug\MobilePhoneShop.dll
 E:\GitHub\MobilePhoneShop\MobilePhoneShop\MobilePhoneShop\obj\Debug\MobilePhoneShop.pdb
+C:\Users\Nam\Desktop\MobilePhoneShop\MobilePhoneShop\MobilePhoneShop\bin\EntityFramework.dll
+C:\Users\Nam\Desktop\MobilePhoneShop\MobilePhoneShop\MobilePhoneShop\bin\EntityFramework.SqlServer.dll
+C:\Users\Nam\Desktop\MobilePhoneShop\MobilePhoneShop\MobilePhoneShop\bin\EntityFramework.xml
+C:\Users\Nam\Desktop\MobilePhoneShop\MobilePhoneShop\MobilePhoneShop\bin\EntityFramework.SqlServer.xml
