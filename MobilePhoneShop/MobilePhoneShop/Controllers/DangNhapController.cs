@@ -30,18 +30,34 @@ namespace MobilePhoneShop.Controllers
             using (MobilePhoneShopEntities db = new MobilePhoneShopEntities())
             {
                 var userDetail = db.UserProfiles.Where(x => x.UserName == user.UserName && x.Password == user.Password).FirstOrDefault();
-                if (userDetail == null)
+                if(Session["userID"] == null)
                 {
-                    user.LoginErrorMsg = "Tài khoản hoặc mật khẩu không tồn tại";
-                    return View("Index", user);
+                    if(user.UserName == null || user.Password == null)
+                    {
+                        user.LoginErrorMsg = null;
+                        return View("Index",user);
+                    } else
+                    {
+                        if (userDetail == null)
+                        {
+                            user.LoginErrorMsg = "Tài khoản hoặc mật khẩu không tồn tại";
+                            return View("Index", user);
 
-                }
-                else
+                        }
+                        else
+                        {
+                            /*                    user.ActiveFlat = true;*/
+                            Session["userID"] = user.UserId;
+                            Session["userName"] = user.UserName;
+                            return RedirectToAction("Index", "TrangChu");
+                        }
+                    }
+                    
+                } else
                 {
-                    /*                    user.ActiveFlat = true;*/
-                    Session["userName"] = user.UserName;
                     return RedirectToAction("Index", "TrangChu");
                 }
+                
             }
         }
 

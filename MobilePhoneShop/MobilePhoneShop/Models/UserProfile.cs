@@ -22,6 +22,10 @@ namespace MobilePhoneShop.Models
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
+        [Required(ErrorMessage = "Nhập lại mật khẩu")]
+        [DataType(DataType.Password)]
+        public string ConfirmPassword { get; set; }
+
         public string LoginErrorMsg { get; set; }
 
         public bool ActiveFlat { get; set; }

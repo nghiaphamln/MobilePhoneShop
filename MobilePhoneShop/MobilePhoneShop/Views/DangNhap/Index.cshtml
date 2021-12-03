@@ -10,8 +10,8 @@
     <section class="clean-block clean-form dark">
         <div class="container">
             <div class="block-heading">
-             @*   <h2 class="text-info">Log In</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>*@
+                @*   <h2 class="text-info">Log In</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>*@
             </div>
             @using (Html.BeginForm("Authorise", "DangNhap", FormMethod.Post))
             {
@@ -29,7 +29,18 @@
                 <div>
                     <label class="field-validation-error">@Html.DisplayFor(model => model.LoginErrorMsg)</label>
                 </div>
-                <input type="submit" value="Đăng nhập" class="btn btn-primary" />
+
+
+                @*if (Session["userName"] != null)
+                {
+                    @Html.ActionLink("Đăng nhập", "Index", "TrangChu", new { @class = "btn btn-primary" })
+                }
+                else
+                {*@
+                    <input type="submit" value="Đăng nhập" class="btn btn-primary" />
+@*                }*@
+
+
             }
         </div>
     </section>
